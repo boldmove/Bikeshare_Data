@@ -1,4 +1,4 @@
-# US Bikeshare Data Analysis Project
+# Discover Urban Patterns and Mobility using the US Bikeshare Data Analysis Project
 
 This project explores and analyzes bikeshare data from three major cities in the United States: **Chicago**, **New York City**, and **Washington, D.C.**. The analysis provides insights into user behavior, trip durations, and travel patterns using Python.
 
