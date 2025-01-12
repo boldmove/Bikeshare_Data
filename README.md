@@ -1,48 +1,64 @@
-# Bikeshare_Data
-Using Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. I write code to import the data and answer interesting questions about it by computing descriptive statistics. I also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
+# US Bikeshare Data Analysis Project
 
-The data provided by Motivate, a bike share system provider for many major cities in the United States was used to uncover bike share usage patterns. I compare the system usage between three large cities: Chicago, New York City, and Washington, DC.
+This project explores and analyzes bikeshare data from three major cities in the United States: **Chicago**, **New York City**, and **Washington, D.C.**. The analysis provides insights into user behavior, trip durations, and travel patterns using Python.
 
-check https://drive.google.com/drive/folders/1Qw1F7XjyKeH_CYVf7_B89Fhm68WqIMTg?usp=sharing for csv files
-The Datasets
-Randomly selected data for the first six months of 2017 are provided for all three cities. All three of the data files contain the same core six (6) columns:
+---
 
-Start Time (e.g., 2017-01-01 00:07:57)
+## 🚀 **Project Overview**
+The `US_Bikeshare_Data.py` script is designed to:
+1. Load bikeshare data for the selected city.
+2. Perform interactive filtering based on the **month** and **day of the week**.
+3. Calculate and display statistics for:
+   - **Popular travel times**
+   - **Most common stations and trips**
+   - **Trip duration**
+   - **User demographics** (gender and birth year when available)
 
-End Time (e.g., 2017-01-01 00:20:53)
+---
 
-Trip Duration (in seconds - e.g., 776)
+## 📂 **Dataset**
+The project uses the following datasets:
+- **chicago.csv**  
+- **new_york_city.csv**  
+- **washington.csv**  
 
-Start Station (e.g., Broadway & Barry Ave)
+These files contain bikeshare trip data, including:
+- Start and end times of trips
+- Start and end stations
+- Trip durations
+- User types (Subscriber/Customer)
+- Gender and birth year (only available for Chicago and New York City)
 
-End Station (e.g., Sedgwick St & North Ave)
+---
 
-User Type (Subscriber or Customer)
+## 🛠️ **Features**
+### **1. Interactive User Inputs**
+- The script prompts the user to select a city, month, and day for data analysis.
+- The filtering options include:
+  - Cities: Chicago, New York City, Washington
+  - Months: January through June or "All" months
+  - Days: Monday through Sunday or "All" days
 
-The Chicago and New York City files also have the following two columns: #Birth Year #Gender
+### **2. Statistics Computed**
+- **Popular Times of Travel**
+  - Most frequent month
+  - Most frequent day
+  - Most frequent start hour
+- **Popular Stations and Trips**
+  - Most common start station
+  - Most common end station
+  - Most common trip (start station to end station)
+- **Trip Duration**
+  - Total travel time
+  - Average travel time
+- **User Demographics**
+  - Counts of user types (Subscriber/Customer)
+  - Counts of gender (when available)
+  - Earliest, most recent, and most common year of birth (when available)
 
-Statistics Computed
-I learn about bike share use in Chicago, New York City, and Washington by computing a variety of descriptive statistics. I write code to provide the following information:
+---
 
-#1 Popular times of travel (i.e., occurs most often in the start time)
-
-most common month most common day of week most common hour of day #2 Popular stations and trip
-
-most common start station most common end station most common trip from start to end (i.e., most frequent combination of start station and end station) #3 Trip duration
-
-total travel time average travel time #4 User info
-
-counts of each user type counts of each gender (only available for NYC and Chicago) earliest, most recent, most common year of birth (only available for NYC and Chicago)
-
-An Interactive Experience
-The script takes in raw input to create an interactive experience in the terminal that answers questions about the dataset. The experience is interactive because depending on a user's input, the answers to the questions on the previous page will change! There are four questions that will change the answers:
-
-Would you like to see data for Chicago, New York, or Washington?
-
-Would you like to filter the data by month, day, or not at all?
-
-(If they chose month) Which month - January, February, March, April, May, or June?
-
-(If they chose day) Which day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?
-
-The answers to the questions above will determine the city and timeframe on which data analysis will be done. After filtering the dataset, users will see the statistical result of the data, and choose to start again or exit.
+## 📋 **Usage**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/boldmove/Bikeshare_Data.git
